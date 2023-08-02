@@ -33,11 +33,11 @@ sender_password = 'your_sender_password'
 # Iterate through the rows, generate QR code, and send emails
 for index, row in df.iterrows():
     email = row['email']
-    apx_value = str(row['apx'])
+    qrx_value = str(row['qrx'])
 
     # Generate the QR code
-    qr_file_name = f'QR_{apx_value}.png'
-    generate_qr_code(apx_value, qr_file_name)
+    qr_file_name = f'QR_{qrx_value}.png'
+    generate_qr_code(qrx_value, qr_file_name)
 
     # Send email with the QR code
     msg = MIMEMultipart()
