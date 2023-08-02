@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_screen_mage"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="119dp"
+            android:layout_height="34dp"
+            android:text="Username"
+            android:paddingStart="5dp"
+            android:textAllCaps="true"
+            android:textColor="#FBFBFB"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/t1"
+            android:hint="enter username here"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="119dp"
+            android:layout_height="34dp"
+            android:textColor="#F3F6F6"
+            android:text="Password"
+            android:textAllCaps="true"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/t2"
+            android:layout_width="335dp"
+            android:hint="enter password here"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/btnColor"
+        android:background="#009688"
+        android:text="Login"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:onClick="login"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/tv"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

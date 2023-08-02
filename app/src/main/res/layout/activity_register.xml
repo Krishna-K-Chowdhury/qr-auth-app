@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_mage"
+    tools:context=".NewRecordReg"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/nameid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter full name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/rollid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameid"
+                    android:layout_marginTop="8dp"
+                    android:hint="Enter Roll number"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/yearid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rollid"
+                    android:layout_marginTop="8dp"
+                    android:hint="Enter Year"
+                    android:inputType="number"
+                    android:maxLength="1" />
+
+                <EditText
+                    android:id="@+id/dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yearid"
+                    android:layout_marginTop="8dp"
+                    android:hint="Enter Dept. (CSE/EE/ME/TT)"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="3" />
+
+                <EditText
+                    android:id="@+id/emailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dept"
+                    android:layout_marginTop="8dp"
+                    android:hint="Enter Email id"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/transacid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emailid"
+                    android:layout_marginTop="8dp"
+                    android:hint="Enter UPI Transaction ID(If no,write `cash`)"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/payRecName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/transacid"
+                    android:layout_marginTop="8dp"
+                    android:hint="Enter payment receiver name"
+                    android:inputType="text" />
+
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/payRecName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:backgroundTint="@color/btnColor"
+                    android:ems="10"
+                    android:text="Register"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/dashBd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:ems="10"
+                    android:text="Dashboard" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
