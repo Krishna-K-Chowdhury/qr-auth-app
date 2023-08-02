@@ -3,7 +3,7 @@
 The QR-Authentication System is a secure and efficient solution that allows authenticated admins to generate unique QR codes for each person in the event list. These QR codes are then sent via email to respective users. Upon scanning the QR code using the Android app, the backend verifies its authenticity against the MySQL database and marks the QR code as "visited," ensuring that the same QR code cannot be used again.
 
 ## Demo
-![Demo GIF](https://www.kkchowdhury.tech/project_demo_gif/qr-app-demo.gif)
+[Click here to watch a quick demo](https://www.kkchowdhury.tech/project_demo_gif/qr-app-demo.gif)
 
 ## Features
 
